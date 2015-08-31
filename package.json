@@ -32,7 +32,7 @@
   "repository": "qix-/node-man-api-mdoc",
   "dependencies": {
     "is-arrayish": "^0.2.0",
-    "man-api": "^0.3.0"
+    "man-api": "^0.3.1"
   },
   "devDependencies": {
     "coffee-script": "^1.9.3",

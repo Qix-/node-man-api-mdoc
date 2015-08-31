@@ -33,7 +33,7 @@ it 'should create a header', make (man, expect)->
 it 'should add the OS', make (man, expect)->
   man.os()
   expect ".Os #{man.formatArgument MDoc.systems[os.platform()]} " +
-    "#{os.release().replace /\./g, '\\.'}\n"
+    "#{os.release().replace /\./g, '\\&.'}\n"
 
 it 'should generate a NAME section', make (man, expect)->
   man.name 'foobar', 'into the bar'
@@ -49,7 +49,7 @@ it 'should generate a LIBRARY section', make (man, expect)->
 
 it 'should generate an include tag', make (man, expect)->
   man.include 'stdio.h'
-  expect '.In stdio\\.h\n'
+  expect '.In stdio\\&.h\n'
 
 it 'should generate a function type tag', make (man, expect)->
   man.fnType 'size_t'
