@@ -1,7 +1,7 @@
 {
   "name": "man-api-mdoc",
   "description": "MDoc macro extensions for man-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Qix (http://github.com/qix-)",
   "keywords": [
     "man",
