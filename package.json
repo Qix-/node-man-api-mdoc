@@ -1,0 +1,45 @@
+{
+  "name": "man-api-mdoc",
+  "description": "MDoc macro extensions for man-api",
+  "version": "0.1.0",
+  "author": "Qix (http://github.com/qix-)",
+  "keywords": [
+    "man",
+    "api",
+    "manpage",
+    "groff",
+    "mdoc",
+    "bsd",
+    "programmer",
+    "code",
+    "library",
+    "function",
+    "functions"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "pretest": "xo",
+    "test": "mocha --compilers coffee:coffee-script/register"
+  },
+  "xo": {
+    "rules": {
+      "no-mixed-spaces-and-tabs": [0]
+    }
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": "qix-/node-man-api-mdoc",
+  "dependencies": {
+    "is-arrayish": "^0.2.0",
+    "man-api": "^0.3.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "should": "^7.0.1",
+    "xo": "^0.7.1"
+  }
+}
